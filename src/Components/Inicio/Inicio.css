@@ -1,0 +1,19 @@
+.containerHeaderInfo{
+    background-image: url(../../../public/dev6.jpg);
+    background-size: cover;
+    
+}
+
+@media screen and (min-width: 505px) and (max-width: 765px){
+    .containerHeaderInfo{
+        background-image: url(../../../public/dev5.jpg);
+        background-size: cover;
+    }
+}
+
+@media screen and (min-width: 310px) and (max-width: 505px){
+    .containerHeaderInfo{
+        background-image: url(../../../public/dev2.jpg);
+        background-size: cover;
+    }
+}
