@@ -21,17 +21,24 @@ display:flex;
 justify-content:center;
 align-items:center;
 flex-wrap:wrap;
+
 `
 
+const Titles = styled.h1`
+font-family: "Anton SC", sans-serif;
+font-size: 20px;
+margin-top:20px;
+`
 export default function Proyectos() {
 
     const imagesWidi = [widi1, widi2, widi3, widi4, widi5, widi6, widi7, widi8];
     const imagesChupitraki = [chupitraki1, chupitraki2, chupitraki3, chupitraki4];
     return (
         <div>
-            <h1>Proyectos</h1>
+            <Titles>Proyectos</Titles>
             <CarouselContainer>
-                <div>
+                <div className="m-5">
+                <Carousel images={imagesWidi} />
                     <div className="flex justify-center items-center">
                         <Link to='https://github.com/guadafestinese96/widistore' target="_blank">
                             <div className="flex m-1 justify-center items-center bg-[#ED6BBF] w-20 rounded hover:bg-white">
@@ -46,9 +53,10 @@ export default function Proyectos() {
                             </div>
                         </Link>
                     </div>
-                    <Carousel images={imagesWidi} />
+                    
                 </div>
-                <div>
+                <div className="m-5">
+                <Carousel images={imagesChupitraki} />
                     <div className="flex justify-center items-center">
                         <Link to='https://github.com/guadafestinese96/chupitraki-page' target="_blank">
                             <div className="flex m-1 justify-center items-center bg-[#ED6BBF] w-20 rounded hover:bg-white">
@@ -63,7 +71,7 @@ export default function Proyectos() {
                             </div>
                         </Link>
                     </div>
-                    <Carousel images={imagesChupitraki} />
+                    
                 </div>
 
                 
@@ -73,6 +81,3 @@ export default function Proyectos() {
     )
 }
 
-/*
-https://widistore.vercel.app/<Carousel images={imagesChupitraki} />
-*/

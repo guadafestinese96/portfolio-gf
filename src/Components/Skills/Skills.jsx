@@ -51,13 +51,17 @@ width: 100vw;
 border-bottom: 2px solid var(--colorPrimario);
 border-top: 2px solid var(--colorPrimario);
 `
-
+const Titles = styled.h1`
+font-family: "Anton SC", sans-serif;
+font-size: 20px;
+margin-top:20px;
+`
 export default function Skills(){
     
 
     return(
     <ContainerAll>
-        <h1>Skils</h1>
+        <Titles>Skils</Titles>
         <ContainerSkils>
         <Imgs src={reactImg} alt='reactImg'/>
         <Imgs src={viteImg} alt='viteImg'/>

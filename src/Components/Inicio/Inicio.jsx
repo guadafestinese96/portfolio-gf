@@ -5,6 +5,7 @@ import Proyectos from '../Proyectos/Proyectos';
 import './Inicio.css'
 import Header from '../Header/Header';
 
+
 const Title = styled.h1`
    font-family: "Qwitcher Grypen", cursive;
   font-weight: 700;
@@ -15,19 +16,21 @@ const Title = styled.h1`
   `
 
 const Title2 = styled.h2`
-   font-family: "Spectral SC", serif;
+  font-family: "Anton SC", sans-serif;
   font-weight: 200;
   font-style: normal;
     font-size: 36px;
   color:var(--colorSecundario);
+  text-transform:uppercase;
   `
 
   const Title3 = styled.h3`
   font-size: 25px;
-  font-family: "Spectral SC", serif;
+  font-family: "Anton SC", sans-serif;
   font-weight: 200;
   font-style: normal;
   color:white;
+  text-transform:uppercase;
   `
 
 
@@ -70,9 +73,3 @@ export default function Inicio() {
   )
 }
 
-/*
-font-family: "Anton SC", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  text-transform:uppercase;
-  */
