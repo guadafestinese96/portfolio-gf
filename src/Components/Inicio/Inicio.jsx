@@ -51,6 +51,7 @@ const ContainerIndex = styled.div`
     width: 100vw;
     height: 300px;
     
+    
 `
 
 const ContainerHeaderInfo = styled.div`
@@ -59,6 +60,8 @@ justify-content: space-between;
 padding: 5px 50px 5px 50px;
 align-items:center;
 background-color:black;
+justify-content:center;
+    align-items:center;
 `
 
 export default function Inicio() {
