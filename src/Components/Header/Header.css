@@ -26,3 +26,18 @@
         font-style: normal;
         text-transform: lowercase;
     }
+
+    .liHeader:hover{
+        background-color: black;
+        color: var(--colorPrimario);
+    }
+
+    @media screen and (min-width: 310px) and (max-width: 520px){
+       .ulHeader{
+        flex-direction: column;
+       }
+       .liHeader{
+        font-size: 15px;
+        margin: 2px;
+       }
+    }

@@ -21,14 +21,19 @@ import './Skills.css'
 
 
 const Imgs = styled.img`
-height: 50px;
+height: 40px;
+width: 40px;
 margin: 5px;
+background-color:white;
+border: 1px solid black;
+padding: 3px;
+border-radius: 5px;
 `
 const ImgVercel = styled.img`
 height: 40px;
 margin: 5px;
 border: 1px solid black;
-border-radius: 50%;
+border-radius: 5px;
 padding: 5px;
 background-color:white;
 `
@@ -39,14 +44,13 @@ justify-content:center;
 align-items:center;
 `
 const ContainerAll = styled.div`
-background-color:white;
+
 margin: 5px 0px 5px 0px;
 padding: 5px;
 width: 100vw;
 border-bottom: 2px solid var(--colorPrimario);
 border-top: 2px solid var(--colorPrimario);
 `
-const imagenes = [reactImg, viteImg, jsImg, cssImg, htmlImg, sassImg, apiImg, auth0Img, bootstrapImg,firebaseImg, githubImg, nodeImg, tailwindImg, vercelImg, vscImg, figmaImg, corelImg, canvaImg];
 
 export default function Skills(){
     
@@ -77,18 +81,3 @@ export default function Skills(){
         </ContainerAll>
     )
 }
-/*
-export default function Skills() {
-
-    return (
-        <div>
-            <div className=' overflow-hidden w-full'>
-                <div className="flex whitespace-nowrap animate-scroll">
-                    {imagenes.map((imagen, index) => (
-                        <img src={imagen} key={index} className='w-20'/>
-                    ))}
-                </div>
-            </div>
-        </div>
-    )
-}*/

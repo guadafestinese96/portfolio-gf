@@ -27,7 +27,7 @@ const CarouselImg = styled.img`
 
 const CarouselButton = styled.button`
     background-color: var(--colorPrimario);
-    color: var(--colorSecundario);
+    color: black;
     height: 30px;
     border-radius: 5px;
     padding: 3px;
@@ -36,6 +36,8 @@ const CarouselButton = styled.button`
     align-items:center;
     margin: 5px;
     border: 1px solid var(--colorSecundario);
+    &:hover{
+    color:var(--colorSecundario);}
 `
 const CarouselContainer = styled.div`
 display:flex;

@@ -32,7 +32,7 @@ export default function Header() {
 
             <ul className='ulHeader'>
                 {links.map((link, index) => (
-                    <NavLink to={link.path}>
+                    <NavLink to={link.path} key={index}>
                         <li className='liHeader' key={index}>{link.label}</li>
                     </NavLink>
                 ))}
@@ -41,13 +41,3 @@ export default function Header() {
     )
 }
 
-/*
-<ul className='ulHeader'>
-                <li className='liHeader'>Proyectos</li>
-                <li className='liHeader'>Skils</li>
-                <li className='liHeader'>CV</li>
-            </ul>
-
-            <Gif src={workerGif} alt='workerGif' className='w-40 rounded-5xl' />
-            
-            */
