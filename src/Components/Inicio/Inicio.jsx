@@ -13,6 +13,10 @@ const Title = styled.h1`
   font-size: 75px;
   color:rgba(237,107,191);
 
+  @media (max-width: 500px){
+  font-size: 55px;
+  }
+
   `
 
 const Title2 = styled.h2`
@@ -22,6 +26,9 @@ const Title2 = styled.h2`
     font-size: 36px;
   color:var(--colorSecundario);
   text-transform:uppercase;
+    @media (max-width: 500px){
+     font-size: 25px;
+   }
   `
 
   const Title3 = styled.h3`
@@ -31,6 +38,9 @@ const Title2 = styled.h2`
   font-style: normal;
   color:white;
   text-transform:uppercase;
+  @media (max-width: 500px){
+     font-size: 20px;
+   }
   `
 
 
