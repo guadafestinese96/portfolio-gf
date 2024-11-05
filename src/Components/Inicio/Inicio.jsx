@@ -14,7 +14,7 @@ const Title = styled.h1`
   color:rgba(237,107,191);
 
   @media (max-width: 500px){
-  font-size: 55px;
+  font-size: 50px;
   }
 
   `
