@@ -38,10 +38,22 @@ padding: 5px;
 background-color:white;
 `
 const ContainerSkils = styled.div`
-display:flex;
-flex-wrap:wrap;
+
 justify-content:center;
 align-items:center;
+display:flex;
+
+@media (max-width:940px){
+  display: grid;
+  grid-template-columns: repeat(9, 50px);
+  grid-auto-rows: 50px;
+  grid-gap: 2px;
+}
+
+@media (max-width: 550px){
+    grid-template-columns: repeat(6, 50px);
+}
+
 `
 const ContainerAll = styled.div`
 
@@ -62,7 +74,7 @@ export default function Skills(){
     return(
     <ContainerAll>
         <Titles>Skils</Titles>
-        <ContainerSkils>
+        <ContainerSkils className="containerSkills">
         <Imgs src={reactImg} alt='reactImg'/>
         <Imgs src={viteImg} alt='viteImg'/>
         <Imgs src={jsImg} alt='jsImg'/>
@@ -85,3 +97,4 @@ export default function Skills(){
         </ContainerAll>
     )
 }
+
